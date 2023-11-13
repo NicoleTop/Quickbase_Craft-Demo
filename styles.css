@@ -1,0 +1,114 @@
+.cards-container {
+  padding: 6.25rem 0.9375rem 6.25rem 0.9375rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.875rem;
+}
+@media (min-width: 56.25rem) and (max-width: 75rem) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 37.5rem) and (max-width: 56.25rem) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 37.5rem) {
+  .cards-container {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+  }
+}
+
+.card-custom {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #363432;
+}
+
+.asparagus-bg, a.btn.btn--asparagus {
+  background-color: #82934B;
+}
+
+.carrot-bg, a.btn.btn--carrot {
+  background-color: #EF9421;
+}
+
+.elm-bg, a.btn.btn--elm {
+  background-color: #1A6874;
+  color: #fff;
+}
+
+.banner {
+  font-weight: bold;
+  padding: 0.9375rem;
+  font-size: 1.5rem;
+  margin: 0;
+}
+@media (min-width: 56.25rem) {
+  .banner {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 56.25rem) {
+  .banner {
+    font-size: 1.125rem;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+  height: 15.625rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-custom-body {
+  height: 100%;
+}
+
+.card-custom-title {
+  padding: 0.9375rem;
+  font-weight: bold;
+  font-size: 2.25rem;
+}
+@media screen and (max-width: 56.25rem) {
+  .card-custom-title {
+    font-size: 1.5rem;
+  }
+}
+
+.card-custom-info {
+  margin-bottom: 1.875rem;
+  padding: 0.9375rem 0.9375rem 0 0.9375rem;
+}
+
+a.btn {
+  color: white;
+  padding: 0.5rem 0.9375rem;
+  margin: 0 0.9375rem 0.9375rem 0.9375rem;
+  font-weight: bold;
+}
+a.btn:hover {
+  color: white;
+  text-decoration: none;
+}
+a.btn.btn--asparagus {
+  color: #000;
+}
+a.btn.btn--asparagus:hover {
+  background-color: #1A6874;
+  color: #fff;
+}
+a.btn.btn--carrot {
+  color: black;
+}
+a.btn.btn--carrot:hover {
+  background-color: #F79B82;
+}
+a.btn.btn--elm:hover {
+  background-color: #82934B;
+  color: #000;
+}/*# sourceMappingURL=styles.css.map */

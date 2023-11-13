@@ -1,0 +1,119 @@
+@import "variables.scss";
+
+.cards-container{
+  padding: $primary-space $space-m $primary-space $space-m;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: $space-l;
+
+  @media (min-width:$screen-size-lg) and (max-width:$screen-size-xl){
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media (min-width:$screen-size-md) and (max-width:$screen-size-lg){
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  @media screen and (max-width:$screen-size-md) {
+    grid-template-rows: 1fr;
+    grid-template-columns: auto;
+  }
+}
+
+.card-custom {
+  display: flex;
+  flex-direction: column;
+  border: $base-card-border;
+}
+
+.asparagus-bg {
+  background-color: $asparagus-bg;
+}
+
+.carrot-bg {
+  background-color: $carrot-bg;
+}
+
+.elm-bg {
+  background-color: $elm-bg;
+  color:$white;
+}
+
+.banner {
+  font-weight: bold;
+  padding: $space-m;
+  font-size: $txt-size-m;
+  margin:0;
+
+  @media (min-width: $screen-size-lg) {
+    font-size: $txt-size-m;
+  }
+
+  @media screen and (max-width: $screen-size-lg) {
+    font-size: $txt-size-sm;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+  height: $img-height;
+  object-fit: cover;
+}
+
+.card-custom-body{
+  height: 100%;
+}
+
+.card-custom-title {
+  padding: $space-m;
+  font-weight: bold;
+  font-size: $txt-size-l;
+
+  @media screen and (max-width: $screen-size-lg) {
+    font-size: $txt-size-m;
+  }
+}
+
+.card-custom-info {
+  margin-bottom: $space-l;
+  padding: $space-m $space-m 0 $space-m;
+}
+
+a.btn {
+  color: white;
+  padding: $space-sm $space-m;
+  margin:0 $space-m $space-m $space-m;
+  font-weight: bold;
+
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+
+  &.btn--asparagus {
+    @extend .asparagus-bg;
+    color:$black;
+    &:hover{
+      background-color: $elm-bg;
+      color:$white;
+    }
+  }
+
+  &.btn--carrot {
+    @extend .carrot-bg;
+    color:black;
+    &:hover{
+      background-color: $geraldine;
+    }
+  }
+
+  &.btn--elm {
+    @extend .elm-bg;
+    &:hover{
+      background-color: $asparagus-bg;
+      color:$black;
+    }
+  }
+}
+

@@ -1,0 +1,43 @@
+$base-font-size: 16; // Set your base font size in pixels
+
+@function px-to-rem($px) {
+  @return #{($px / $base-font-size) + rem};
+}
+
+//spacing  - paddings, margins, etc.
+$space-l:px-to-rem(30);
+$space-m:px-to-rem(15);
+$space-sm:px-to-rem(8);
+$primary-space:px-to-rem(100);
+
+//img high
+$img-height:px-to-rem(250);
+
+//colors
+$dune:#363432;
+$black:#000;
+$white:#fff;
+$asparagus-bg:#82934B; 
+$carrot-bg:#EF9421;
+$elm-bg: #1A6874;
+$geraldine: #F79B82;
+$picton-blue: #47C5E0;
+$chrome: #E2EDD7; 
+
+//text-color
+$primary-text:$black;
+$secondary-text:$white;
+
+//text-size
+$primary-font:px-to-rem(16);
+$txt-size-l:px-to-rem(36);
+$txt-size-m:px-to-rem(24);
+$txt-size-sm:px-to-rem(18);
+
+//borders, radius
+$base-card-border:1px solid $dune;
+
+//media-qeries
+$screen-size-xl:px-to-rem(1200);
+$screen-size-lg:px-to-rem(900);
+$screen-size-md:px-to-rem(600);
